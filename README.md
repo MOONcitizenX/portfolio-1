@@ -1,1 +1,3 @@
-# portfolio-1
+# Portfolio project  
+
+## Static desktop version  
