@@ -63,6 +63,14 @@ h3 {
 	margin: 0 auto;
 }
 
+a {
+	transition: color 0.2s;
+}
+
+a:hover {
+	color: var(--gold);
+}
+
 .btn {
 	display: block;
 	width: 220px;
@@ -75,12 +83,12 @@ h3 {
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 40px;
-	transition: opacity 0.2s;
+	transition: color 0.2s;
 }
 
 .btn:hover,
 .btn:focus {
-	opacity: 0.9;
+	color: var(--white);
 }
 
 .btn-active {
@@ -377,6 +385,87 @@ h3 {
 	justify-content: flex-end;
 }
 
+.contacts__container {
+	padding-right: 20px;
+}
+
 .contacts__form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.input {
+	height: 50px;
+	background: rgba(0, 0, 0, 0.5);
+	border: none;
+	border: 2px solid var(--gold);
+	padding-left: 20px;
+	color: var(--gold);
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 40px;
+	border-radius: 0;
+}
+
+.input:active,
+.input:focus {
+	outline: none;
+}
+
+.input::placeholder {
+	color: var(--gold);
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 40px;
+}
+
+.contacts__form textarea {
+	height: 100px;
+	resize: none;
+}
+
+.contacts__title {
+	font-family: 'Merriweather';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 80px;
+	color: var(--gold);
+	margin: 60px 0 40px;
 }
 /* Contacts style end */
+
+/* Footer styles start */
+
+.footer {
+	background-color: var(--bg-dark);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 50px 20px;
+}
+
+.footer__block {
+	display: flex;
+	gap: 20px;
+}
+.footer__block-item {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 50px;
+	color: var(--white);
+}
+
+.footer__block-git {
+	text-decoration: none;
+	color: var(--white);
+}
+
+.footer__block-img {
+	width: 32px;
+	height: 32px;
+}
+
+/* Footer styles end */
