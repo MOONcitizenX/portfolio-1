@@ -64,34 +64,41 @@ h3 {
 }
 
 .btn {
-	max-width: 220px;
-	max-height: 55px;
-	background-color: var(--gold);
-	padding: 5px 0;
-	transition: filter 0.2s;
-}
-
-.btn:hover,
-.btn:focus {
-	filter: brightness(85%);
-}
-
-.btn a {
-	display: inline-block;
-	width: 100%;
-	height: 100%;
-	text-decoration: none;
-	color: var(--bg-dark);
+	display: block;
+	width: 220px;
+	height: 55px;
+	border: 2px solid var(--gold);
+	background-color: var(--bg-dark);
+	cursor: pointer;
+	color: var(--gold);
 	text-align: center;
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 40px;
+	transition: opacity 0.2s;
+}
+
+.btn:hover,
+.btn:focus {
+	opacity: 0.9;
+}
+
+.btn-active {
+	background-color: var(--gold);
+	color: var(--bg-dark);
 }
 
 .section {
 	background-color: var(--bg-dark);
 	background-size: cover;
 }
+
+.section-container {
+	padding: 100px 20px 0;
+	margin: 0 auto;
+}
+
+/* Section title start */
 
 .section-title {
 	text-align: center;
@@ -119,13 +126,15 @@ h3 {
 	display: block;
 	top: 50%;
 	height: 2px;
-	width: 500px;
+	width: 700px;
 	background: var(--gold);
 	left: 50%;
 	z-index: 1;
 	transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
 }
+
+/* Section title end */
 
 /* Header style start */
 
@@ -205,16 +214,12 @@ h3 {
 
 /* Skills style start */
 
-.skills__container {
-	padding-top: 100px;
-}
-
 .skills__cards {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	justify-items: center;
 	gap: 40px;
-	padding: 0 20px;
+	margin-top: 60px;
 }
 
 .skills__card {
@@ -230,7 +235,6 @@ h3 {
 	height: 50px;
 	width: 100%;
 	margin-bottom: 30px;
-	margin-top: 60px;
 }
 
 .skills__card-title {
@@ -249,3 +253,46 @@ h3 {
 }
 
 /* Skills style end */
+
+/* Portfolio style start */
+
+.portfolio__buttons {
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+	margin-top: 60px;
+}
+
+.portfolio__pictures {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 25px;
+	margin-top: 60px;
+}
+
+/* Portfolio style end */
+
+/* Video style start */
+
+.video__player {
+	max-height: 705px;
+	width: 100%;
+	margin-top: 60px;
+	position: relative;
+}
+
+.video__player-bg {
+	height: 100%;
+}
+
+.video__player-button {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 130px;
+	height: 130px;
+}
+
+/* Video style end */
