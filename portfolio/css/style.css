@@ -1,0 +1,209 @@
+/* merriweather-700 - latin */
+@font-face {
+	font-family: 'Merriweather';
+	font-style: normal;
+	font-weight: 700;
+	src: local(''),
+		url('../fonts/merriweather-v30-latin-700.woff2') format('woff2'),
+		/* Chrome 26+, Opera 23+, Firefox 39+ */
+			url('../fonts/merriweather-v30-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* inter-regular - latin */
+@font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	src: local(''),
+		url('../fonts/inter-v11-latin-regular.woff2') format('woff2'),
+		/* Chrome 26+, Opera 23+, Firefox 39+ */
+			url('../fonts/inter-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+:root {
+	--bg-dark: #000000;
+	--gold: #bdae82;
+	--white: #ffffff;
+}
+
+html {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: var(--white);
+}
+
+img {
+	min-width: 100%;
+	height: auto;
+}
+
+p,
+h1 {
+	margin: 0;
+}
+
+.wrapper {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.btn {
+	max-width: 220px;
+	max-height: 55px;
+	background-color: var(--gold);
+	padding: 5px 0;
+}
+
+.btn a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	color: var(--bg-dark);
+	text-align: center;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 40px;
+}
+
+.section {
+	background-color: var(--bg-dark);
+	background-size: cover;
+}
+
+.section-title {
+	text-align: center;
+	line-height: 0.1em;
+	position: relative;
+	margin: 0 20px;
+}
+
+.section-title span {
+	font-family: 'Merriweather';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 80px;
+	color: var(--gold);
+	background: var(--bg-dark);
+	z-index: 2;
+	position: relative;
+	padding: 0 20px;
+}
+
+.section-title::before {
+	content: '';
+	position: absolute;
+	display: block;
+	top: 50%;
+	height: 2px;
+	width: 500px;
+	background: var(--gold);
+	left: 50%;
+	z-index: 1;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+}
+
+/* Header style start */
+
+.header__container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: 15px;
+	position: fixed;
+	top: 0;
+	width: 1440px;
+	padding: 20px;
+}
+
+.header__logo {
+	width: 50px;
+	height: 50px;
+}
+.header__img {
+	width: 100%;
+	height: 100%;
+}
+
+.header__list {
+	display: flex;
+	justify-content: flex-end;
+	gap: 30px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.header__list-link {
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 50px;
+	color: var(--white);
+}
+
+/* Header style end */
+
+/* Hero style start */
+
+.hero {
+	background-image: url(../img/hero-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.hero__container {
+	padding: 250px 0 330px 80px;
+}
+
+.hero__title {
+	font-family: 'Merriweather';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 120px;
+	color: var(--white);
+	padding-bottom: 10px;
+}
+
+.hero__desc {
+	display: inline-block;
+	max-width: 470px;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 40px;
+	color: var(--white);
+	padding-bottom: 25px;
+}
+
+/* Hero style end */
+
+/* Skills style start */
+
+.skills__container {
+	padding-top: 100px;
+}
+
+.skills__cards {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+/* Skills style end */
