@@ -4,6 +4,7 @@ const burgerOpen = document.querySelector('.burger__icon-open');
 const burgerClose = document.querySelector('.burger__icon-close');
 const navMenuItems = document.querySelectorAll('.header__list-link');
 const darkBg = document.querySelector('#cover');
+const portfolioButtons = document.querySelectorAll('.btn-portfolio');
 
 const bgClick = () => {
 	darkBg.addEventListener('click', () => {
@@ -49,10 +50,22 @@ const toggleBurger = () => {
 	}
 };
 
+const activatePortfolioButton = () => {
+	portfolioButtons.forEach((button) => {
+		button.addEventListener('click', () => {
+			portfolioButtons.forEach((btn) => {
+				btn.classList.remove('btn-active');
+			});
+			button.classList.add('btn-active');
+		});
+	});
+};
+
 const app = () => {
 	burgerButton();
 	navLinks();
 	bgClick();
+	activatePortfolioButton();
 };
 
 app();

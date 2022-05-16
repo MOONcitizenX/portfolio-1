@@ -82,7 +82,7 @@ a:hover {
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 20px;
-	transition: color 0.2s;
+	transition: all 0.2s ease-in;
 	padding: 0;
 	padding: 0.775em 0;
 }
