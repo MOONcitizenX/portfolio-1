@@ -323,6 +323,7 @@ main {
 	height: 100%;
 	max-width: 130px;
 	max-height: 130px;
+	cursor: pointer;
 }
 
 /* Video style end */
