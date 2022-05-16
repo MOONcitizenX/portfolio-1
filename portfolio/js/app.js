@@ -33,10 +33,13 @@ const navLinks = () => {
 };
 
 const darkenBg = () => {
-	if (darkBg.classList.contains('covering')) {
-		darkBg.classList.remove('covering');
-	} else {
+	if (
+		navMenu.classList.contains('burger__active') &&
+		!darkBg.classList.contains('covering')
+	) {
 		darkBg.classList.add('covering');
+	} else {
+		darkBg.classList.remove('covering');
 	}
 };
 
