@@ -154,6 +154,10 @@ main {
 .header {
 	max-width: 1440px;
 	margin: 0 auto;
+	background-image: url(../img/hero-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
 }
 
 .header__container {
@@ -162,15 +166,8 @@ main {
 	justify-content: space-between;
 	align-items: center;
 	gap: 15px;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
 	width: 100%;
-	max-width: 1440px;
 	padding: 20px;
-	margin: 0 auto;
-	z-index: 3;
 }
 
 .header__logo {
@@ -205,11 +202,7 @@ main {
 
 .hero__container {
 	width: 100%;
-	background-image: url(../img/hero-bg.jpg);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	padding: 250px 0 330px 80px;
+	padding: 160px 0 330px 80px;
 	display: flex;
 	flex-direction: column;
 }
