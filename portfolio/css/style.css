@@ -36,6 +36,7 @@ html {
 *::before,
 *::after {
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -99,6 +100,30 @@ a:hover {
 main {
 	max-width: 1440px;
 	margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+	main {
+		max-width: 768px;
+	}
+}
+
+#cover {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	z-index: -1;
+}
+
+#cover.covering {
+	display: block;
+	width: 100%;
+	height: 100%;
+	z-index: 20;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .section {
@@ -167,6 +192,12 @@ main {
 	background-size: cover;
 }
 
+@media (max-width: 768px) {
+	.header {
+		max-width: 768px;
+	}
+}
+
 .header__container {
 	display: flex;
 	flex-direction: row;
@@ -175,6 +206,12 @@ main {
 	gap: 15px;
 	width: 100%;
 	padding: 20px;
+}
+
+@media (max-width: 768px) {
+	.header__container {
+		overflow-x: hidden;
+	}
 }
 
 .header__logo {
@@ -195,12 +232,80 @@ main {
 	padding: 0;
 }
 
+@media (max-width: 768px) {
+	.header__list {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		max-width: 620px;
+		max-height: 100vh;
+		padding-top: 134px;
+		padding-left: 127px;
+		background-color: var(--bg-dark);
+		transform: translateX(100%);
+		transition: transform 0.3s ease;
+		z-index: 21;
+	}
+}
+
 .header__list-link {
 	text-decoration: none;
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 50px;
 	color: var(--white);
+}
+
+@media (max-width: 768px) {
+	.header__list-link {
+		font-weight: 400;
+		font-size: 35px;
+		line-height: 73px;
+	}
+}
+
+.burger {
+	display: none;
+	margin-right: 44px;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+}
+@media (max-width: 768px) {
+	.burger {
+		display: block;
+		z-index: 22;
+	}
+}
+
+.burger__icon {
+	width: 50px;
+	height: 50px;
+}
+
+.burger__active {
+	transform: translateX(0%);
+}
+
+.burger__active-bg {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.burger__close {
+	display: none;
+}
+
+.burger__icon-close {
+	stroke: var(--white);
+}
+
+.burger__icon-close:hover {
+	stroke: var(--gold);
 }
 
 /* Header style end */
