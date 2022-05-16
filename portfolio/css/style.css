@@ -390,9 +390,27 @@ main {
 
 .skills__cards {
 	display: flex;
-	justify-items: center;
+	justify-content: center;
 	gap: 40px;
 	margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+	.skills__cards {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		gap: 44px;
+	}
+}
+
+@media (max-width: 480px) {
+	.skills__cards {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 44px;
+	}
 }
 
 .skills__card {
@@ -412,7 +430,7 @@ main {
 
 .skills__card-title {
 	max-width: 280px;
-	flex-grow: 1;
+	/* flex-grow: 1; */
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 40px;
@@ -429,6 +447,12 @@ main {
 	color: var(--white);
 }
 
+@media (max-width: 768px) {
+	.skills__card-desc {
+		line-height: 22px;
+	}
+}
+
 /* Skills style end */
 
 /* Portfolio style start */
@@ -440,6 +464,27 @@ main {
 	margin-top: 60px;
 }
 
+@media (max-width: 768px) {
+	.portfolio__buttons {
+		padding-top: 60px;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: repeat(2, 220px);
+		grid-template-rows: repeat(2, 55px);
+		justify-content: center;
+		gap: 5px;
+	}
+}
+@media (max-width: 480px) {
+	.portfolio__buttons {
+		padding-top: 60px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 5px;
+	}
+}
+
 .portfolio__pictures {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -448,9 +493,36 @@ main {
 	margin-top: 60px;
 }
 
+@media (max-width: 768px) {
+	.portfolio__pictures {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 25px;
+		margin-top: 60px;
+	}
+}
+@media (max-width: 768px) {
+	.portfolio__pictures-item {
+		width: 100%;
+		height: auto;
+		max-width: 450px;
+	}
+}
+
 /* Portfolio style end */
 
 /* Video style start */
+
+.video {
+	padding: 100px 20px 0;
+}
+
+@media (max-width: 768px) {
+	.video {
+		padding: 100px 0 0;
+	}
+}
 
 .video__player {
 	max-height: 705px;
@@ -461,6 +533,12 @@ main {
 
 .video__player-bg {
 	height: 100%;
+}
+
+@media (max-width: 768px) {
+	.video__player {
+		max-height: 418px;
+	}
 }
 
 .video__player-button {
@@ -474,6 +552,13 @@ main {
 	max-width: 130px;
 	max-height: 130px;
 	cursor: pointer;
+}
+
+@media (max-width: 768px) {
+	.video__player-button {
+		max-width: 65px;
+		max-height: 65px;
+	}
 }
 
 /* Video style end */
@@ -491,6 +576,15 @@ main {
 	margin-top: 60px;
 }
 
+@media (max-width: 768px) {
+	.price__cards {
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+		align-items: center;
+	}
+}
+
 .price__card {
 	display: flex;
 	flex-direction: column;
@@ -498,7 +592,20 @@ main {
 	flex: 1;
 	gap: 20px;
 	border: 3px solid var(--gold);
-	padding: 43px;
+	padding-top: 43px;
+}
+@media (max-width: 768px) {
+	.price__card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 20px;
+		width: 100%;
+		max-width: 420px;
+		height: 100%;
+		max-height: 505px;
+	}
 }
 
 .price__title {
@@ -507,7 +614,6 @@ main {
 	font-weight: 700;
 	font-size: 28px;
 	line-height: 56px;
-	text-align: center;
 	color: var(--white);
 }
 
@@ -518,7 +624,6 @@ main {
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 48px;
-	text-align: center;
 	color: var(--gold);
 }
 
@@ -526,13 +631,18 @@ main {
 	flex-grow: 1;
 	display: flex;
 	flex-direction: column;
-	/* justify-content: center; */
 	align-items: center;
 	gap: 10px;
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	padding-bottom: 40px;
+	padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+	.price__list {
+		gap: 0;
+	}
 }
 
 .price__list li {
@@ -540,7 +650,12 @@ main {
 	line-height: 36px;
 	text-align: center;
 }
-.price__card-button {
+
+@media (max-width: 768px) {
+	.price__button {
+		display: block;
+		margin-bottom: 40px;
+	}
 }
 
 /* Price style end */
