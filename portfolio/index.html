@@ -10,7 +10,7 @@
 	</head>
 	<body>
 		<header class="header">
-			<div class="header__container">
+			<nav class="header__container">
 				<div class="header__logo">
 					<a href="#" class="header__link">
 						<svg class="svg header__img">
@@ -19,21 +19,21 @@
 							></use></svg
 					></a>
 				</div>
-				<ul class="header__list">
+				<ul class="header__list" id="menu">
 					<li class="header__list-item">
-						<a href="#" class="header__list-link">Skills</a>
+						<a href="#skills" class="header__list-link">Skills</a>
 					</li>
 					<li class="header__list-item">
-						<a href="#" class="header__list-link">Portfolio</a>
+						<a href="#portfolio" class="header__list-link">Portfolio</a>
 					</li>
 					<li class="header__list-item">
-						<a href="#" class="header__list-link">Video</a>
+						<a href="#video" class="header__list-link">Video</a>
 					</li>
 					<li class="header__list-item">
-						<a href="#" class="header__list-link">Price</a>
+						<a href="#price" class="header__list-link">Price</a>
 					</li>
 					<li class="header__list-item">
-						<a href="#" class="header__list-link">Contacts</a>
+						<a href="#contacts" class="header__list-link">Contacts</a>
 					</li>
 					<li class="header__list-item">
 						<a href="#" class="header__list-link"
@@ -41,7 +41,19 @@
 						>
 					</li>
 				</ul>
-			</div>
+				<div class="burger">
+					<svg class="svg burger__icon burger__icon-open ">
+						<use
+							xlink:href="./img/svg/sprites.svg#burger-open">
+						</use>
+					</svg>
+					<svg class="svg burger__icon burger__icon-close burger__close">
+						<use
+							xlink:href="./img/svg/sprites.svg#burger-close">
+						</use>
+					</svg>
+				</div>
+			</nav>
 			<div class="container">
 				<div class="hero__container">
 					<h1 class="hero__title">Alexa Rise</h1>
@@ -55,12 +67,11 @@
 			</div>
 		</header>
 		<main class="main">
-			<section class="hero"></section>
 			<section class="skills section">
 				<div class="container">
 					<div class="section-container">
 						<h2 class="skills_title section-title">
-							<span>Skills</span>
+							<span id="skills">Skills</span>
 						</h2>
 						<div class="skills__cards">
 							<div class="skills__card">
@@ -122,13 +133,13 @@
 				<div class="container">
 					<div class="section-container">
 						<h2 class="portfolio__title section-title">
-							<span>Portfolio</span>
+							<span id="portfolio">Portfolio</span>
 						</h2>
 						<div class="portfolio__buttons">
-							<button class="btn">Winter</button>
-							<button class="btn">Spring</button>
-							<button class="btn">Summer</button>
-							<button class="btn btn-active">Autumn</button>
+							<button class="btn btn-portfolio">Winter</button>
+							<button class="btn btn-portfolio">Spring</button>
+							<button class="btn btn-portfolio">Summer</button>
+							<button class="btn btn-portfolio btn-active">Autumn</button>
 						</div>
 						<div class="portfolio__pictures">
 							<img
@@ -167,22 +178,18 @@
 			</section>
 			<section class="video section">
 				<div class="container">
-					<div class="section-container">
-						<h2 class="video__title section-title">
-							<span>Video</span>
-						</h2>
-						<div class="video__player">
-							<img
-								src="./img/video-player.jpg"
-								alt="wedding photo"
-								class="video_player-bg"
-							/>
-							<svg class="svg video__player-button">
-								<use
-									xlink:href="./img/svg/sprites.svg#play"
-								></use>
-							</svg>
-						</div>
+					<h2 class="video__title section-title">
+						<span id="video">Video</span>
+					</h2>
+					<div class="video__player">
+						<img
+							src="./img/video-player.jpg"
+							alt="wedding photo"
+							class="video_player-bg"
+						/>
+						<svg class="svg video__player-button">
+							<use xlink:href="./img/svg/sprites.svg#play"></use>
+						</svg>
 					</div>
 				</div>
 			</section>
@@ -190,7 +197,7 @@
 				<div class="container">
 					<div class="section-container">
 						<h2 class="video__title section-title">
-							<span>Price</span>
+							<span id="price">Price</span>
 						</h2>
 						<div class="price__cards">
 							<div class="price__card">
@@ -203,9 +210,7 @@
 									<li>Readiness 2-3 weeks</li>
 									<li>Make up, visage</li>
 								</ul>
-								<button
-									class="btn btn-active price__card-button"
-								>
+								<button class="btn btn-active price__button">
 									Order shooting
 								</button>
 							</div>
@@ -243,8 +248,8 @@
 				</div>
 			</section>
 			<section class="contacts">
-				<div class="container">
-					<div class="contacts__container">
+				<div class="left-container">
+					<div id="contacts" class="contacts__container">
 						<form action="#" class="contacts__form">
 							<h2 class="contacts__title">Contact me</h2>
 							<input
@@ -311,5 +316,7 @@
 				></a>
 			</div>
 		</footer>
+		<div id="cover"></div>
+		<script src="./js/app.js"></script>
 	</body>
 </html>
