@@ -12,12 +12,12 @@
 		<header class="header">
 			<div class="header__container">
 				<div class="header__logo">
-					<a href="#" class="header__link"
-						><img
-							src="./img/svg/logo.svg"
-							alt="logo"
-							class="header__img"
-					/></a>
+					<a href="#" class="header__link">
+						<svg class="svg header__img">
+							<use
+								xlink:href="./img/svg/sprites.svg#logo"
+							></use></svg
+					></a>
 				</div>
 				<ul class="header__list">
 					<li class="header__list-item">
@@ -36,7 +36,9 @@
 						<a href="#" class="header__list-link">Contacts</a>
 					</li>
 					<li class="header__list-item">
-						<a href="#" class="header__list-link">en / ru</a>
+						<a href="#" class="header__list-link"
+							><span>en</span> / <span>ru</spa></a
+						>
 					</li>
 				</ul>
 			</div>
@@ -175,11 +177,11 @@
 								alt="wedding photo"
 								class="video_player-bg"
 							/>
-							<img
-								src="./img/svg/play_button.svg"
-								alt="play button"
-								class="video__player-button"
-							/>
+							<svg class="svg video__player-button">
+								<use
+									xlink:href="./img/svg/sprites.svg#play"
+								></use>
+							</svg>
 						</div>
 					</div>
 				</div>
@@ -290,29 +292,23 @@
 			</div>
 			<div class="footer__block">
 				<a href="#!" class="footer__block-link"
-					><img
-						src="./img/svg/footer_svg/inst.svg"
-						alt="instagram"
-						class="footer__block-img"
-				/></a>
+					><svg class="svg footer__block-img">
+						<use xlink:href="./img/svg/sprites.svg#fb"></use></svg
+				></a>
 				<a href="#!" class="footer__block-link"
-					><img
-						src="./img/svg/footer_svg/fb.svg"
-						alt="facebook"
-						class="footer__block-img"
-				/></a>
+					><svg class="svg footer__block-img">
+						<use xlink:href="./img/svg/sprites.svg#inst"></use></svg
+				></a>
 				<a href="#!" class="footer__block-link"
-					><img
-						src="./img/svg/footer_svg/tw.svg"
-						alt="twitter"
-						class="footer__block-img"
-				/></a>
+					><svg class="svg footer__block-img">
+						<use
+							xlink:href="./img/svg/sprites.svg#pinterest"
+						></use></svg
+				></a>
 				<a href="#!" class="footer__block-link"
-					><img
-						src="./img/svg/footer_svg/pinterest.svg"
-						alt="pinterest"
-						class="footer__block-img"
-				/></a>
+					><svg class="svg footer__block-img">
+						<use xlink:href="./img/svg/sprites.svg#tw"></use></svg
+				></a>
 			</div>
 		</footer>
 	</body>
