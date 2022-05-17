@@ -245,6 +245,12 @@ main {
 	padding: 20px 60px;
 }
 
+@media (max-width: 768px) {
+	.header__container {
+		gap: 20px;
+	}
+}
+
 @media (max-width: 480px) {
 	.header__container {
 		padding: 20px 30px;
@@ -321,12 +327,24 @@ main {
 	}
 }
 
+.header__language {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 50px;
+	color: var(--white);
+	cursor: pointer;
+}
+
 @media (max-width: 768px) {
 	.header__language {
 		font-weight: 700;
 		font-size: 20px;
 		line-height: 50px;
 	}
+}
+
+.lang__active {
+	color: var(--gold);
 }
 
 .burger {

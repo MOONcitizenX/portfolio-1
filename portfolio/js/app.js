@@ -5,6 +5,8 @@ const burgerClose = document.querySelector('.burger__icon-close');
 const navMenuItems = document.querySelectorAll('.header__list-link');
 const darkBg = document.querySelector('#cover');
 const portfolioButtons = document.querySelectorAll('.btn-portfolio');
+const langButtons = document.querySelectorAll('#language');
+const langBlock = document.querySelector('.header__language-swap');
 
 const bgClick = () => {
 	darkBg.addEventListener('click', () => {
@@ -74,12 +76,23 @@ const navBarCloser = () => {
 	});
 };
 
+const langSwap = () => {
+	langBlock.addEventListener('click', () => {
+		langButtons.forEach((btn) => {
+			btn.classList.toggle('lang__active');
+		});
+	});
+};
+
+const toggleLang = () => {};
+
 const app = () => {
 	burgerButton();
 	navLinks();
 	bgClick();
 	activatePortfolioButton();
 	navBarCloser();
+	langSwap();
 };
 
 app();
