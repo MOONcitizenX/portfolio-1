@@ -64,11 +64,22 @@ const activatePortfolioButton = () => {
 	});
 };
 
+const navBarCloser = () => {
+	window.addEventListener('resize', () => {
+		if (window.innerWidth > 768) {
+			navMenu.classList.remove('burger__active');
+			darkenBg();
+			toggleBurger();
+		}
+	});
+};
+
 const app = () => {
 	burgerButton();
 	navLinks();
 	bgClick();
 	activatePortfolioButton();
+	navBarCloser();
 };
 
 app();
