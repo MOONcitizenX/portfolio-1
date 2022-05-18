@@ -1,23 +1,25 @@
-/* merriweather-700 - latin */
+/* merriweather-700 - latin_cyrillic */
 @font-face {
 	font-family: 'Merriweather';
 	font-style: normal;
 	font-weight: 700;
 	src: local(''),
-		url('../fonts/merriweather-v30-latin-700.woff2') format('woff2'),
+		url('../fonts/merriweather-v30-latin_cyrillic-700.woff2')
+			format('woff2'),
 		/* Chrome 26+, Opera 23+, Firefox 39+ */
-			url('../fonts/merriweather-v30-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+			url('../fonts/merriweather-v30-latin_cyrillic-700.woff')
+			format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* inter-regular - latin */
+/* inter-regular - latin_cyrillic */
 @font-face {
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 400;
 	src: local(''),
-		url('../fonts/inter-v11-latin-regular.woff2') format('woff2'),
+		url('../fonts/inter-v11-latin_cyrillic-regular.woff2') format('woff2'),
 		/* Chrome 26+, Opera 23+, Firefox 39+ */
-			url('../fonts/inter-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+			url('../fonts/inter-v11-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 :root {
@@ -62,7 +64,7 @@ section {
 }
 
 a {
-	transition: color 0.2s;
+	transition: color 0.2s ease-in-out;
 }
 
 a:hover {
@@ -242,12 +244,18 @@ main {
 	align-items: center;
 	gap: 30px;
 	width: 100%;
-	padding: 20px 60px;
+	padding: 20px;
 }
 
 @media (max-width: 768px) {
 	.header__container {
-		gap: 20px;
+		padding: 20px 60px;
+	}
+}
+@media (max-width: 640px) {
+	.header__container {
+		padding-left: 25px;
+		padding-right: 25px;
 	}
 }
 
@@ -484,7 +492,7 @@ main {
 
 .hero__desc {
 	display: inline-block;
-	max-width: 470px;
+	max-width: 490px;
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 40px;
@@ -516,6 +524,11 @@ main {
 	justify-content: center;
 	gap: 40px;
 	margin-top: 60px;
+}
+@media (max-width: 860px) {
+	.skills__cards {
+		gap: 20px;
+	}
 }
 
 @media (max-width: 768px) {
@@ -799,12 +812,12 @@ main {
 		justify-content: center;
 	}
 }
-.left-container {
+.right-container {
 	width: 100%;
 	max-width: 470px;
 }
 @media (max-width: 768px) {
-	.left-container {
+	.right-container {
 		max-width: 450px;
 	}
 }
@@ -814,7 +827,7 @@ main {
 }
 @media (max-width: 768px) {
 	.contacts__container {
-		padding: 60px 0 111px;
+		padding: 60px 20px 111px;
 	}
 }
 
@@ -880,6 +893,7 @@ main {
 		margin: 0 0 20px;
 		font-size: 32px;
 		line-height: 64px;
+		text-align: center;
 	}
 }
 /* Contacts style end */

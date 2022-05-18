@@ -21,29 +21,50 @@
 				</div>
 				<ul class="header__list" id="menu">
 					<li class="header__list-item">
-						<a href="#skills" class="header__list-link">Skills</a>
+						<a
+							href="#skills"
+							class="header__list-link"
+							id="lang_skills"
+							>Skills</a
+						>
 					</li>
 					<li class="header__list-item">
-						<a href="#portfolio" class="header__list-link"
+						<a
+							href="#portfolio"
+							class="header__list-link"
+							id="lang_portfolio"
 							>Portfolio</a
 						>
 					</li>
 					<li class="header__list-item">
-						<a href="#video" class="header__list-link">Video</a>
+						<a
+							href="#video"
+							class="header__list-link"
+							id="lang_video"
+							>Video</a
+						>
 					</li>
 					<li class="header__list-item">
-						<a href="#price" class="header__list-link">Price</a>
+						<a
+							href="#price"
+							class="header__list-link"
+							id="lang_price"
+							>Price</a
+						>
 					</li>
 					<li class="header__list-item">
-						<a href="#contacts" class="header__list-link"
+						<a
+							href="#contacts"
+							class="header__list-link"
+							id="lang_contacts"
 							>Contacts</a
 						>
 					</li>
 				</ul>
 				<div class="header__language header__language-swap">
-					<span id="language" class="lang__eng lang__active">en</span>
+					<span id="lang-en" class="language lang__active">en</span>
 					<span>&nbsp;/&nbsp;</span>
-					<span id="language" class="lang__rus">ru</span>
+					<span id="lang-ru" class="language">ru</span>
 				</div>
 				<div class="burger">
 					<svg class="svg burger__icon burger__icon-open">
@@ -62,13 +83,15 @@
 			</nav>
 			<div class="container">
 				<div class="hero__container">
-					<h1 class="hero__title">Alexa Rise</h1>
-					<p class="hero__desc">
+					<h1 class="hero__title" id="lang_hero_title">Alexa Rise</h1>
+					<p class="hero__desc" id="lang_hero_desc">
 						Save sincere emotions, romantic feelings and happy
 						moments of life together with professional photographer
 						Alexa Rise
 					</p>
-					<button class="btn btn-active">Hire me</button>
+					<button class="btn btn-active" id="lang_hero_hire">
+						Hire me
+					</button>
 				</div>
 			</div>
 		</header>
@@ -86,10 +109,16 @@
 									alt="photo"
 									class="skills__card-logo"
 								/>
-								<h3 class="skills__card-title">
+								<h3
+									class="skills__card-title"
+									id="skills_photo_title"
+								>
 									Digital photography
 								</h3>
-								<p class="skills__card-desc">
+								<p
+									class="skills__card-desc"
+									id="skills_photo_desc"
+								>
 									High-quality photos in the studio and on the
 									nature
 								</p>
@@ -100,10 +129,16 @@
 									alt="video"
 									class="skills__card-logo"
 								/>
-								<h3 class="skills__card-title">
+								<h3
+									class="skills__card-title"
+									id="skills_video_title"
+								>
 									Video shooting
 								</h3>
-								<p class="skills__card-desc">
+								<p
+									class="skills__card-desc"
+									id="skills_video_desc"
+								>
 									Capture your moments so that they always
 									stay with you
 								</p>
@@ -114,8 +149,16 @@
 									alt="retouch"
 									class="skills__card-logo"
 								/>
-								<h3 class="skills__card-title">Retouch</h3>
-								<p class="skills__card-desc">
+								<h3
+									class="skills__card-title"
+									id="skills_retouch_title"
+								>
+									Retouch
+								</h3>
+								<p
+									class="skills__card-desc"
+									id="skills_retouch_desc"
+								>
 									I strive to make photography surpass reality
 								</p>
 							</div>
@@ -125,8 +168,16 @@
 									alt="microphone"
 									class="skills__card-logo"
 								/>
-								<h3 class="skills__card-title">Audio</h3>
-								<p class="skills__card-desc">
+								<h3
+									class="skills__card-title"
+									id="skills_audio_title"
+								>
+									Audio
+								</h3>
+								<p
+									class="skills__card-desc"
+									id="skills_audio_desc"
+								>
 									Professional sounds recording for video,
 									advertising, portfolio
 								</p>
@@ -142,10 +193,28 @@
 							<span id="portfolio">Portfolio</span>
 						</h2>
 						<div class="portfolio__buttons">
-							<button class="btn btn-portfolio">Winter</button>
-							<button class="btn btn-portfolio">Spring</button>
-							<button class="btn btn-portfolio">Summer</button>
-							<button class="btn btn-portfolio btn-active">
+							<button
+								class="btn btn-portfolio"
+								id="portfolio_winter"
+							>
+								Winter
+							</button>
+							<button
+								class="btn btn-portfolio"
+								id="portfolio_spring"
+							>
+								Spring
+							</button>
+							<button
+								class="btn btn-portfolio"
+								id="portfolio_summer"
+							>
+								Summer
+							</button>
+							<button
+								class="btn btn-portfolio btn-active"
+								id="portfolio_autumn"
+							>
 								Autumn
 							</button>
 						</div>
@@ -209,9 +278,11 @@
 						</h2>
 						<div class="price__cards">
 							<div class="price__card">
-								<h3 class="price__title">Standard</h3>
+								<h3 class="price__title" id="standard_title">
+									Standard
+								</h3>
 								<p class="price__amount">500 $</p>
-								<ul class="price__list">
+								<ul class="price__list" id="standard_list">
 									<li>One location</li>
 									<li>120 photos in color</li>
 									<li>12 photos in retouch</li>
@@ -223,9 +294,11 @@
 								</button>
 							</div>
 							<div class="price__card">
-								<h3 class="price__title">Premium</h3>
+								<h3 class="price__title" id="premium_title">
+									Premium
+								</h3>
 								<p class="price__amount">700 $</p>
-								<ul class="price__list">
+								<ul class="price__list" id="premium_list">
 									<li>One or two locations</li>
 									<li>200 photos in color</li>
 									<li>20 photos in retouch</li>
@@ -237,9 +310,11 @@
 								</button>
 							</div>
 							<div class="price__card">
-								<h3 class="price__title">Gold</h3>
+								<h3 class="price__title" id="gold_title">
+									Gold
+								</h3>
 								<p class="price__amount">1000 $</p>
-								<ul class="price__list">
+								<ul class="price__list" id="gold_list">
 									<li>Three locations or more</li>
 									<li>300 photos in color</li>
 									<li>50 photos in retouch</li>
@@ -256,29 +331,37 @@
 				</div>
 			</section>
 			<section class="contacts">
-				<div class="left-container">
+				<div class="right-container">
 					<div id="contacts" class="contacts__container">
 						<form action="#" class="contacts__form">
-							<h2 class="contacts__title">Contact me</h2>
+							<h2 class="contacts__title" id="contact_title">
+								Contact me
+							</h2>
 							<input
 								class="input"
 								type="email"
 								placeholder="E-mail"
+								id="contact_email"
 							/>
 							<input
 								class="input"
 								type="tel"
 								placeholder="Phone"
+								id="contact_phone"
 							/>
 							<textarea
 								class="input"
 								name=""
-								id=""
+								id="contact_message"
 								cols="30"
 								rows="10"
 								placeholder="Message"
 							></textarea>
-							<button type="submit" class="btn btn-active">
+							<button
+								type="submit"
+								class="btn btn-active"
+								id="contact_button"
+							>
 								Send message
 							</button>
 						</form>
