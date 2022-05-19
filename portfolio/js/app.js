@@ -5,10 +5,18 @@ const BURGER_CLOSE = document.querySelector('.burger__icon-close');
 const NAV_MENU_ITEMS = document.querySelectorAll('.header__list-link');
 const DARK_BG = document.querySelector('#cover');
 const PORTFOLIO_BUTTONS = document.querySelectorAll('.btn-portfolio');
+const PORTFOLIO_IMGS = document.querySelectorAll('.portfolio__pictures');
 const LANG_BUTTONS = document.querySelectorAll('.language');
 const LANG_BLOCK = document.querySelector('.header__language-swap');
 const LANG_EN = document.querySelector('#lang-en');
 const LANG_RU = document.querySelector('#lang-ru');
+
+const PORTFOLIO_TABS = {
+	Winter: 'winter_img',
+	Autumn: 'autumn_img',
+	Summer: 'summer_img',
+	Spring: 'spring_img'
+};
 
 const LANGUAGES = {
 	en: {
@@ -179,8 +187,21 @@ const activatePortfolioButton = () => {
 				btn.classList.remove('btn-active');
 			});
 			button.classList.add('btn-active');
+			switchPortfolioTabs();
 		});
 	});
+};
+
+const switchPortfolioTabs = () => {
+	const currentTab = document.querySelector(
+		'.btn-portfolio.btn-active'
+	).textContent;
+	const currentTabID = '#' + currentTab.trim().toLowerCase() + '_img';
+	PORTFOLIO_IMGS.forEach((img) => {
+		img.classList.remove('portfolio-active');
+	});
+	const currentTabBlock = document.querySelector(currentTabID);
+	currentTabBlock.classList.add('portfolio-active');
 };
 
 const navBarCloser = () => {
