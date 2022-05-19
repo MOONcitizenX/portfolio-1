@@ -11,13 +11,6 @@ const LANG_BLOCK = document.querySelector('.header__language-swap');
 const LANG_EN = document.querySelector('#lang-en');
 const LANG_RU = document.querySelector('#lang-ru');
 
-const PORTFOLIO_TABS = {
-	Winter: 'winter_img',
-	Autumn: 'autumn_img',
-	Summer: 'summer_img',
-	Spring: 'spring_img'
-};
-
 const LANGUAGES = {
 	en: {
 		hero_title: 'Alexa Rise',
@@ -193,10 +186,8 @@ const activatePortfolioButton = () => {
 };
 
 const switchPortfolioTabs = () => {
-	const currentTab = document.querySelector(
-		'.btn-portfolio.btn-active'
-	).textContent;
-	const currentTabID = '#' + currentTab.trim().toLowerCase() + '_img';
+	const currentTab = document.querySelector('.btn-portfolio.btn-active').id;
+	const currentTabID = `#${currentTab.trim().toLowerCase()}_img`;
 	PORTFOLIO_IMGS.forEach((img) => {
 		img.classList.remove('portfolio-active');
 	});
