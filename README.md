@@ -1,3 +1,3 @@
 # Portfolio project  
 
-## Static desktop version  
+## Interactive adaptive version
