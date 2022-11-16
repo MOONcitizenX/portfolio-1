@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio</title>
+		<link rel="stylesheet" href="./css/normalize.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<nav class="header__container">
+				<div class="header__logo">
+					<a href="#" class="header__link">
+						<svg class="svg header__img">
+							<use
+								xlink:href="./img/svg/sprites.svg#logo"
+							></use></svg
+					></a>
+				</div>
+				<ul class="header__list" id="menu">
+					<li class="header__list-item">
+						<a
+							href="#skills"
+							class="header__list-link"
+							id="lang_skills"
+							>Skills</a
+						>
+					</li>
+					<li class="header__list-item">
+						<a
+							href="#portfolio"
+							class="header__list-link"
+							id="lang_portfolio"
+							>Portfolio</a
+						>
+					</li>
+					<li class="header__list-item">
+						<a
+							href="#video"
+							class="header__list-link"
+							id="lang_video"
+							>Video</a
+						>
+					</li>
+					<li class="header__list-item">
+						<a
+							href="#price"
+							class="header__list-link"
+							id="lang_price"
+							>Price</a
+						>
+					</li>
+					<li class="header__list-item">
+						<a
+							href="#contacts"
+							class="header__list-link"
+							id="lang_contacts"
+							>Contacts</a
+						>
+					</li>
+				</ul>
+				<div class="header__language header__language-swap">
+					<span id="lang-en" class="language lang__active">en</span>
+					<span>&nbsp;/&nbsp;</span>
+					<span id="lang-ru" class="language">ru</span>
+				</div>
+				<div class="burger">
+					<svg class="svg burger__icon burger__icon-open">
+						<use
+							xlink:href="./img/svg/sprites.svg#burger-open"
+						></use>
+					</svg>
+					<svg
+						class="svg burger__icon burger__icon-close burger__close"
+					>
+						<use
+							xlink:href="./img/svg/sprites.svg#burger-close"
+						></use>
+					</svg>
+				</div>
+			</nav>
+			<div class="container">
+				<div class="hero__container">
+					<h1 class="hero__title" id="lang_hero_title">Alexa Rise</h1>
+					<p class="hero__desc" id="lang_hero_desc">
+						Save sincere emotions, romantic feelings and happy
+						moments of life together with professional photographer
+						Alexa Rise
+					</p>
+					<button class="btn btn-active" id="lang_hero_hire">
+						Hire me
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="skills section">
+				<div class="container">
+					<div class="section-container">
+						<h2 class="skills_title section-title">
+							<span id="skills">Skills</span>
+						</h2>
+						<div class="skills__cards">
+							<div class="skills__card">
+								<img
+									src="./img/svg/skills_1.svg"
+									alt="photo"
+									class="skills__card-logo"
+								/>
+								<h3
+									class="skills__card-title"
+									id="skills_photo_title"
+								>
+									Digital photography
+								</h3>
+								<p
+									class="skills__card-desc"
+									id="skills_photo_desc"
+								>
+									High-quality photos in the studio and on the
+									nature
+								</p>
+							</div>
+							<div class="skills__card">
+								<img
+									src="./img/svg/skills_2.svg"
+									alt="video"
+									class="skills__card-logo"
+								/>
+								<h3
+									class="skills__card-title"
+									id="skills_video_title"
+								>
+									Video shooting
+								</h3>
+								<p
+									class="skills__card-desc"
+									id="skills_video_desc"
+								>
+									Capture your moments so that they always
+									stay with you
+								</p>
+							</div>
+							<div class="skills__card">
+								<img
+									src="./img/svg/skills_3.svg"
+									alt="retouch"
+									class="skills__card-logo"
+								/>
+								<h3
+									class="skills__card-title"
+									id="skills_retouch_title"
+								>
+									Retouch
+								</h3>
+								<p
+									class="skills__card-desc"
+									id="skills_retouch_desc"
+								>
+									I strive to make photography surpass reality
+								</p>
+							</div>
+							<div class="skills__card">
+								<img
+									src="./img/svg/skills_4.svg"
+									alt="microphone"
+									class="skills__card-logo"
+								/>
+								<h3
+									class="skills__card-title"
+									id="skills_audio_title"
+								>
+									Audio
+								</h3>
+								<p
+									class="skills__card-desc"
+									id="skills_audio_desc"
+								>
+									Professional sounds recording for video,
+									advertising, portfolio
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="portfolio section">
+				<div class="container">
+					<div class="section-container">
+						<h2 class="portfolio__title section-title">
+							<span id="portfolio">Portfolio</span>
+						</h2>
+						<div class="portfolio__buttons">
+							<button
+								class="btn btn-portfolio"
+								id="portfolio_winter"
+							>
+								Winter
+							</button>
+							<button
+								class="btn btn-portfolio"
+								id="portfolio_spring"
+							>
+								Spring
+							</button>
+							<button
+								class="btn btn-portfolio"
+								id="portfolio_summer"
+							>
+								Summer
+							</button>
+							<button
+								class="btn btn-portfolio btn-active"
+								id="portfolio_autumn"
+							>
+								Autumn
+							</button>
+						</div>
+						<div
+							id="portfolio_autumn_img"
+							class="portfolio__pictures portfolio-active"
+						>
+							<img
+								src="./img/portfolio/portfolio_1.jpg"
+								alt="kissing couple"
+								class="portfolio__pictures-item"
+							/>
+							<img
+								src="./img/portfolio/portfolio_2.jpg"
+								alt="horse in the forest"
+								class="portfolio__pictures-item"
+							/>
+							<img
+								src="./img/portfolio/portfolio_3.jpg"
+								alt="kid playing with fallen leaves"
+								class="portfolio__pictures-item"
+							/>
+							<img
+								src="./img/portfolio/portfolio_4.jpg"
+								alt="forest"
+								class="portfolio__pictures-item"
+							/>
+							<img
+								src="./img/portfolio/portfolio_5.jpg"
+								alt="old couple"
+								class="portfolio__pictures-item"
+							/>
+							<img
+								src="./img/portfolio/portfolio_6.jpg"
+								alt="woman taking picture with phone"
+								class="portfolio__pictures-item"
+							/>
+						</div>
+						<div
+							id="portfolio_winter_img"
+							class="portfolio__pictures"
+						>
+							<img
+								src="https://picsum.photos/id/1004/450/560"
+								alt="couple kissing on the ice"
+								class="portfolio__pictures-item"
+							/>
+							<img
+								src="https://picsum.photos/id/1021/450/560"
+								alt="black-white picture of mountain forest"
+								class="portfolio__pictures-item"
+							/>
+							<img
+								src="https://picsum.photos/id/1036/450/560"
+								alt="camping in snowy mountains"
+								class="portfolio__pictures-item"
+							/>
+							<img
+								src="https://picsum.photos/id/227/450/560"
+								alt="snowy rail-road"
+								class="portfolio__pictures-item"
+							/>
+							<img
+								src="https://picsum.photos/id/232/450/560"
+								alt="streeet lantern in snow"
+								class="portfolio__pictures-item"
+							/>
+							<img
+								src="https://picsum.photos/id/256/450/560"
+								alt="high snowy mountains"
+								class="portfolio__pictures-item"
+							/>
+						</div>
+						<div
+							id="portfolio_summer_img"
+							class="portfolio__pictures"
+						>
+							<img
+								src="https://picsum.photos/id/323/450/560"
+								alt="sea bay"
+								class="portfolio__pictures-item"
+							/>
+							<img
+								src="https://picsum.photos/id/215/450/560"
+								alt="long sandy beach"
+								class="portfolio__pictures-item"
+							/>
+							<img
+								src="https://picsum.photos/id/267/450/560"
+								alt="filtered picture of a beach"
+								class="portfolio__pictures-item"
+							/>
+							<img
+								src="https://picsum.photos/id/269/450/560"
+								alt="seagulls on the pier"
+								class="portfolio__pictures-item"
+							/>
+							<img
+								src="https://picsum.photos/id/281/450/560"
+								alt="man on skateboard doing a trick"
+								class="portfolio__pictures-item"
+							/>
+							<img
+								src="https://picsum.photos/id/287/450/560"
+								alt="green grassy mountains"
+								class="portfolio__pictures-item"
+							/>
+						</div>
+						<div
+							id="portfolio_spring_img"
+							class="portfolio__pictures"
+						>
+							<img
+								src="https://picsum.photos/id/206/450/560"
+								alt="sunny morning garden"
+								class="portfolio__pictures-item"
+							/>
+							<img
+								src="https://picsum.photos/id/216/450/560"
+								alt="a forest trail"
+								class="portfolio__pictures-item"
+							/>
+							<img
+								src="https://picsum.photos/id/217/450/560"
+								alt="broken lake pier"
+								class="portfolio__pictures-item"
+							/>
+							<img
+								src="https://picsum.photos/id/230/450/560"
+								alt="foggy lake"
+								class="portfolio__pictures-item"
+							/>
+							<img
+								src="https://picsum.photos/id/239/450/560"
+								alt="dandelion"
+								class="portfolio__pictures-item"
+							/>
+							<img
+								src="https://picsum.photos/id/25/450/560"
+								alt="filtered morning sunshine through tree branches"
+								class="portfolio__pictures-item"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="video section">
+				<div class="container">
+					<h2 class="video__title section-title">
+						<span id="video">Video</span>
+					</h2>
+					<div class="video__player">
+						<img
+							src="./img/video-player.jpg"
+							alt="wedding photo"
+							class="video_player-bg"
+						/>
+						<a href="#!" class="video__player-link">
+							<svg class="svg video__player-button">
+								<use
+									xlink:href="./img/svg/sprites.svg#play"
+								></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="price section">
+				<div class="container">
+					<div class="section-container">
+						<h2 class="video__title section-title">
+							<span id="price">Price</span>
+						</h2>
+						<div class="price__cards">
+							<div class="price__card">
+								<h3 class="price__title" id="standard_title">
+									Standard
+								</h3>
+								<p class="price__amount">500 $</p>
+								<ul class="price__list" id="standard_list">
+									<li>One location</li>
+									<li>120 photos in color</li>
+									<li>12 photos in retouch</li>
+									<li>Readiness 2-3 weeks</li>
+									<li>Make up, visage</li>
+								</ul>
+								<button class="btn btn-active price__button">
+									Order shooting
+								</button>
+							</div>
+							<div class="price__card">
+								<h3 class="price__title" id="premium_title">
+									Premium
+								</h3>
+								<p class="price__amount">700 $</p>
+								<ul class="price__list" id="premium_list">
+									<li>One or two locations</li>
+									<li>200 photos in color</li>
+									<li>20 photos in retouch</li>
+									<li>Readiness 1-2 weeks</li>
+									<li>Make up, visage</li>
+								</ul>
+								<button class="btn btn-active price__button">
+									Order shooting
+								</button>
+							</div>
+							<div class="price__card">
+								<h3 class="price__title" id="gold_title">
+									Gold
+								</h3>
+								<p class="price__amount">1000 $</p>
+								<ul class="price__list" id="gold_list">
+									<li>Three locations or more</li>
+									<li>300 photos in color</li>
+									<li>50 photos in retouch</li>
+									<li>Readiness 1 week</li>
+									<li>Make up, visage, hairstyle</li>
+								</ul>
+
+								<button class="btn btn-active price__button">
+									Order shooting
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="contacts">
+				<div class="right-container">
+					<div id="contacts" class="contacts__container">
+						<form action="#" class="contacts__form">
+							<h2 class="contacts__title" id="contact_title">
+								Contact me
+							</h2>
+							<input
+								class="input"
+								type="email"
+								placeholder="E-mail"
+								id="contact_email"
+							/>
+							<input
+								class="input"
+								type="tel"
+								placeholder="Phone"
+								id="contact_phone"
+							/>
+							<textarea
+								class="input"
+								name=""
+								id="contact_message"
+								cols="30"
+								rows="10"
+								placeholder="Message"
+							></textarea>
+							<button
+								type="submit"
+								class="btn btn-active"
+								id="contact_button"
+							>
+								Send message
+							</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__block">
+				<p class="footer__block-item">&copy;</p>
+				<p class="footer__block-item">2022</p>
+				<p class="footer__block-item">
+					<a
+						href="http://github.com"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="footer__block-git"
+						>github</a
+					>
+				</p>
+			</div>
+			<div class="footer__block">
+				<p class="footer__block-item">Rolling Scopes School</p>
+			</div>
+			<div class="footer__block">
+				<a href="#!" class="footer__block-link"
+					><svg class="svg footer__block-img">
+						<use xlink:href="./img/svg/sprites.svg#fb"></use></svg
+				></a>
+				<a href="#!" class="footer__block-link"
+					><svg class="svg footer__block-img">
+						<use xlink:href="./img/svg/sprites.svg#inst"></use></svg
+				></a>
+				<a href="#!" class="footer__block-link"
+					><svg class="svg footer__block-img">
+						<use
+							xlink:href="./img/svg/sprites.svg#pinterest"
+						></use></svg
+				></a>
+				<a href="#!" class="footer__block-link"
+					><svg class="svg footer__block-img">
+						<use xlink:href="./img/svg/sprites.svg#tw"></use></svg
+				></a>
+			</div>
+		</footer>
+		<div id="cover"></div>
+		<script src="./js/app.js"></script>
+	</body>
+</html>
