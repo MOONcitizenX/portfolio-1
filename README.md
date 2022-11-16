@@ -1,3 +1,3 @@
 # Portfolio project  
 
-## Interactive adaptive version
+## Landing website for a photographer
